@@ -1,221 +1,298 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<title>X N 0</title>
+<title>Ultimis WEB</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://img.youm7.com/images/NewsPics/gallery/pics/9201512027497312.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    
-  </div>
-  <div class="w3-display-middle">
-  <h1 class="w3-jumbo w3-animate-top ">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">instagram: @xn0</p>
-  </div>
- <!-- <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a target="_blank">wxy</a> --
-  </div>
-<!-- </div> --
-
-</body>
-</html>
--->
-
- <!DOCTYPE html>
-<html>
-<title>rausual</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #fff;
-  line-height: 1.8;
-}
+<body id="myPage">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close Menu
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#team" class="w3-bar-item w3-button">Team</a>
+  <a href="#pricing" class="w3-bar-item w3-button">Shop</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://media.discordapp.net/attachments/672146534955089952/693216375014949025/3980326-2047580244_2.png?width=438&height=427');
-  min-height: 100%;
-}
+</nav> <!--  boss  -->
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url('https://www.colorhexa.com/191826.png');
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("https://media.discordapp.net/attachments/672146534955089952/693216375014949025/3980326-2047580244_2.png?width=438&height=427");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-<body>
-
-<div class="bgimg-2 w3-display-container " id="all">
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>نبذة</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> تواصل</a>
-    
-
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Ultimis Services</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Shop</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+   
   </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">نبذة</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">تواصل</a>
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Ultimis Services</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Shop</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
    
   </div>
 </div>
 
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity ">
+  <img src="https://media.discordapp.net/attachments/709431456887472209/712403080011841606/UltimisMCBackground-PC.png?width=760&height=427" alt="boat" style="width:100%;min-height:350px;max-height:700px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom ">  
 
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container " id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-   <!-- <h1 class="w3-center w3-padding-large w3-black w3-xlarge  w3-animate-opacity w3-serif ">طلال مداح</h1> -->
   </div>
 </div>
 
+<!-- Modal  Our Work -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
 
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet ultimis team:</p>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">عن الموقع</h3>
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://images-ext-2.discordapp.net/external/nw0yHb2ryA5nYfTwHpdSWFtgESxlsjrQkIX70QWL6V0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/236355802414186496/c38a4d0894466a363f834885ce6e3074.png?width=427&height=427" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>higher</h3>
+  <p>Ultimis Founder</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images-ext-2.discordapp.net/external/a78fC2g3ntJp8E02F8XXYprSH6vQPaWWmytNLyD_-1g/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/469641337621315585/1477e4b282b516cc55eb8bc0e3fae391.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>DeSpam</h3>
+  <p>Ultimis Owner</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images-ext-1.discordapp.net/external/VWQ_Wkx_qwOb_tVp6MeNQXm9YJrPHUEUxWx1i088zHw/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/584466224801513477/e4126855eedaaf527aaf2582a07803f5.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Nwii</h3>
+  <p>Ultimis Manager</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://images-ext-1.discordapp.net/external/IdlUGlSRpDtgxwn-GzuU7kz4RUA9d5j7NlMZp9ceV1k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/306818810114080769/a_e376c87626dfe3a0c9f12d85c2b6c20b.gif" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>𝐍à ♔.</h3>
+  <p>Ultimis Manager</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Ultimis Games</h2>
+<p>Here you can see ultimis minecraft games where you can enter and play, and this is a simplified explanation</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://4.bp.blogspot.com/-uSDfYuoLKpo/Uvu_77-ii5I/AAAAAAAABuw/0m3b2saL3vs/s1600/1352128825-redstone-power.png" alt="redpvp" style="width:100%">
+  <div class="w3-container">
+  <h3>RedStonePvP</h3>
+  <h4>Collect weapons and armors</h4>
+  <p>Long fight</p>
+  <p>Big arena</p>
+  <p>Continuous development</p>
+  <p>Modern system</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="https://cdn.glitch.com/8b6a1c7f-66ef-4e6f-9606-c2191743fd6c%2F294bbbfa-66f9-42f4-8903-8bfff7d4f77c.image.png?v=1589931324141" alt="skyblock" style="width:100%">
+  <div class="w3-container">
+  <h3>SkyBlock</h3>
+    <p>build your island</p>
+  <p>just survive</p>
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white w3-greyscale-min">
+  <img src="https://i.pinimg.com/originals/90/be/ef/90beef02795c88e400280f5b98630e70.jpg" alt="bw" style="width:100% ">
+  <div class="w3-container">
+  <h3>BedWars</h3>
+  <h4>Fight hard</h4>
+  <p>protect your bed</p>
+  <p>won the game</p>
   
-  <h5 class="w3-center " ><span >مقاطع قصيرة للفنان الراحل طلال مداح و بعض الفنانين القديرين اشوفها حلوه و انزلها</span></h5>
-  <h6 class="w3-center "><span >افكار الموقع محدودة الآن و يتم تطويرها مع الوقت</span></h6>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container  Basic  -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Ultimis Ranks</h2>
+    <p>Choose one that fits your needs.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">Hero</p>
+        </li>
+        <li class="w3-padding-16"><b>Color</b>: Lime</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 6</h2>
+          <span class="w3-opacity">Life Time</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> SOON</button>
+        </li>
+      </ul>
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-  <!--    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Titan</p>
+        </li>
+<li class="w3-padding-16"><b>Color</b>: Pink</li>
+   <!--     <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li -->
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 12</h2>
+          <span class="w3-opacity">Life Time</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> SOON</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">King</p>
+        </li>
+    <li class="w3-padding-16"><b>Color</b>: Yellow</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 3</h2>
+          <span class="w3-opacity">Life Time</span>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> SOON</button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Saudi Arabia</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  SOON</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  ultimismc@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I accept the Terms of UltimisMC Service</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send [SOON]</button>
+      </form>
     </div>
   </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://twitter.com/UltimisMC" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="http://store.ultimismc.com/" title="ultimis Store"><i class="fa fa-google"></i></a>
   
-  
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122600196&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/109008653&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345777530&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/595040412&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93398018&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213314081&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144367829&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/143869833&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/285819070&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228303582&color=%236a0899&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  <p>Powered by <a href="" target="_blank">UltimisMC host</a></p>
 
-
- 
-
-
-
-
-
-<!-- Second Parallax Image with Portfolio Text
-<!-- Third Parallax Image with Portfolio Text --
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h2 class="w3-center">للتواصل</h2>
-  <p class="w3-center"><em>يمكننا مساعدتك</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section ">
-    
-    <div class="w3-col m8 w3-panel w3-container">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right w3-center"></i>الأردن , عمان<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +هاتف: 962770362823 <br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> بريد الكتروني: <emp>wxy@rakan.ml</emp><br>
-      </div>
-    
-        
-    
-            
-
-
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
 
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+// Used to toggle the menu on smaller screens when clicking on the menu button W3.CSS Template
+function openNav() { 
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
-           <!-- <h8> All rights reserved | This template is made with ❤ by <a href="https://tellmesongname.ml" target="_blank">TellMeSongName </a></h8> -->
-      </body>
-    </html>
-
+ 
+</body>
+</html>
